@@ -1,158 +1,158 @@
-/* Name: Ibrar ul Haq | Roll Number: i263142 */
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 body {
+  font-family: 'Montserrat', sans-serif;
+  color: #183a4a;
+  background-image: url("imag/download.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   min-height: 100vh;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  padding: 20px;
-  background-color: #7eb6cb;
-  background-image: url("download.jpg");
-  background-size: cover;
-  background-position: center right;
-  background-repeat: no-repeat;
-  font-family: "Montserrat", sans-serif;
 }
 
-/* Main Invitation Card */
+/* Top Navigation Bar */
+.navbar {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.94);
+  padding: 14px 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  box-shadow: 0 2px 10px rgba(24, 58, 74, 0.12);
+  margin-bottom: 24px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #183a4a;
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 6px 14px;
+  border-radius: 6px;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  background-color: #183a4a;
+  color: #ffffff;
+}
+
+/* Invitation Card */
 .invitation {
   position: relative;
-  width: 430px;
-  max-width: 100%;
-  padding: 58px 42px;
-  background: rgba(255, 255, 255, 0.88);
-  backdrop-filter: blur(6px);
+  width: 92%;
+  max-width: 540px;
+  background-color: rgba(255, 252, 248, 0.96);
   border-radius: 18px;
-  box-shadow: 0 16px 40px rgba(24, 58, 74, 0.22);
+  padding: 52px 36px;
   text-align: center;
-  overflow: hidden;
+  box-shadow: 0 12px 30px rgba(24, 58, 74, 0.22);
+  margin: auto 0;
 }
 
-/* Wavy Border Overlay */
 .border {
   position: absolute;
-  inset: 12px;
-  width: calc(100% - 24px);
-  height: calc(100% - 24px);
-  object-fit: fill;
+  inset: 10px;
+  width: calc(100% - 20px);
+  height: calc(100% - 20px);
   pointer-events: none;
+}
+
+.bow {
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.bow-tl { top: 16px; left: 16px; }
+.bow-tr { top: 16px; right: 16px; }
+.bow-bl { bottom: 16px; left: 16px; }
+.bow-br { bottom: 16px; right: 16px; }
+
+.content {
+  position: relative;
   z-index: 1;
 }
 
-/* Corner Bows */
-.bow {
-  position: absolute;
-  width: 48px;
-  height: 48px;
-  object-fit: contain;
-  pointer-events: none;
-  z-index: 3;
-}
-
-.bow-tl {
-  top: 10px;
-  left: 10px;
-}
-
-.bow-tr {
-  top: 10px;
-  right: 10px;
-  transform: scaleX(-1);
-}
-
-.bow-bl {
-  bottom: 10px;
-  left: 10px;
-  transform: scaleY(-1);
-}
-
-.bow-br {
-  bottom: 10px;
-  right: 10px;
-  transform: scale(-1, -1);
-}
-
-/* Invitation Text Content */
-.content {
-  position: relative;
-  z-index: 2;
-}
-
+/* Typography & Event Details */
 .small-text {
-  font-family: "Montserrat", sans-serif;
-  font-size: 0.85rem;
-  font-weight: 600;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: #3b738a;
+  font-size: 0.95rem;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
 }
 
-.name {
-  font-family: "Playfair Display", serif;
-  font-size: 2.2rem;
-  font-weight: 600;
-  color: #1c4759;
-  margin-top: 10px;
+.name,
+.party {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.9rem;
+  color: #183a4a;
 }
 
 .script {
-  font-family: "Pinyon Script", cursive;
-  font-size: 4.3rem;
-  font-weight: 400;
-  line-height: 1.05;
-  color: #d95b88;
+  font-family: 'Pinyon Script', cursive;
+  font-size: 3.6rem;
+  color: #183a4a;
+  line-height: 1.1;
   margin: 4px 0;
 }
 
-.party {
-  font-family: "Playfair Display", serif;
-  font-size: 2rem;
-  font-weight: 600;
-  color: #1c4759;
-  margin-bottom: 22px;
+.cake-img {
+  width: 100%;
+  max-width: 240px;
+  height: auto;
+  margin: 16px auto 18px;
+  display: block;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(24, 58, 74, 0.18);
 }
 
 .time,
 .date {
-  margin: 5px 0;
-  color: #265366;
+  font-weight: 600;
 }
 
 .place {
   font-style: normal;
-  margin-top: 12px;
-  line-height: 1.6;
-  color: #3b738a;
+  line-height: 1.5;
+  margin-top: 4px;
 }
 
-/* Join Button */
+/* Action Button */
 .join-btn {
-  margin-top: 26px;
-  padding: 13px 30px;
-  font-family: "Montserrat", sans-serif;
-  font-size: 0.88rem;
-  font-weight: 600;
-  letter-spacing: 1.2px;
-  text-transform: uppercase;
+  margin-top: 16px;
+  background-color: #183a4a;
   color: #ffffff;
-  background-color: #2b6f8a;
   border: none;
-  border-radius: 30px;
+  padding: 12px 26px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 0.95rem;
+  border-radius: 8px;
   cursor: pointer;
-  box-shadow: 0 6px 16px rgba(43, 111, 138, 0.3);
-  transition: background-color 0.25s ease, transform 0.2s ease;
 }
 
 .join-btn:hover {
-  background-color: #1c4759;
-  transform: translateY(-2px);
+  opacity: 0.9;
 }
 
-.join-btn:active {
-  transform: translateY(0);
+/* Footer */
+.site-footer {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.94);
+  color: #183a4a;
+  text-align: center;
+  padding: 14px 16px;
+  font-size: 0.85rem;
+  margin-top: 28px;
 }
