@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!-- Name: Ibrar ul Haq | Roll Number: i263142 | Section: C -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Venue &amp; Directions - Kiki's Birthday Party</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&family=Playfair+Display:wght@600&family=Pinyon+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="schedule.html">Schedule</a>
+    <a href="venue.html" class="active">Venue &amp; Directions</a>
+    <a href="rsvp.html">RSVP</a>
+  </nav>
+
+  <main class="invitation">
+    <img class="border" src="images/wavy-border.svg" alt="">
+    <img class="bow bow-tl" src="imag/image.jpg" alt="">
+    <img class="bow bow-tr" src="imag/image.jpg" alt="">
+    <img class="bow bow-bl" src="imag/image.jpg" alt="">
+    <img class="bow bow-br" src="imag/image.jpg" alt="">
+
+    <section class="content">
+      <p class="small-text">How to Reach Us</p>
+      <h1 class="script">Venue &amp;</h1>
+      <h2 class="party">Directions</h2>
+
+      <div class="venue-details">
+        <div class="info-box">
+          <h3>Party Location</h3>
+          <p>The Garden Pavilion<br>123 Anywhere St., Any City, ST 12345</p>
+        </div>
+
+        <div class="info-box">
+          <h3>Landmark Directions</h3>
+          <p>Located two blocks east of Central Park Gate 2, right next to the Blue Fountain Plaza.</p>
+        </div>
+
+        <div class="info-box">
+          <h3>Dress Code &amp; Parking</h3>
+          <p><strong>Dress Code:</strong> Smart Casual (Pastel or Navy tones)<br>
+          <strong>Parking:</strong> Free valet parking available at the main entrance.</p>
+        </div>
+      </div>
+
+      <button class="join-btn" onclick="showDirections()">Get Quick Directions</button>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Kiki's Birthday Party &bull; 20 January, 2027 &bull; Created by Ibrar ul Haq (i263142)</p>
+  </footer>
+
+  <script>
+    function showDirections() {
+      console.log("Directions requested for 123 Anywhere St., Any City");
+      window.alert("Directions: Head east from Central Park Gate 2 for 2 blocks to 123 Anywhere St. Free parking is at the front gate!");
+    }
+  </script>
+</body>
+</html>
