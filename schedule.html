@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!-- Name: Ibrar ul Haq | Roll Number: i263142 | Section: C -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Schedule - Kiki's Birthday Party</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&family=Playfair+Display:wght@600&family=Pinyon+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="schedule.html" class="active">Schedule</a>
+    <a href="venue.html">Venue &amp; Directions</a>
+    <a href="rsvp.html">RSVP</a>
+  </nav>
+
+  <main class="invitation">
+    <img class="border" src="images/wavy-border.svg" alt="">
+    <img class="bow bow-tl" src="imag/image.jpg" alt="">
+    <img class="bow bow-tr" src="imag/image.jpg" alt="">
+    <img class="bow bow-bl" src="imag/image.jpg" alt="">
+    <img class="bow bow-br" src="imag/image.jpg" alt="">
+
+    <section class="content">
+      <p class="small-text">20 January, 2027</p>
+      <h1 class="script">Party</h1>
+      <h2 class="party">Schedule</h2>
+
+      <table class="schedule-table">
+        <thead>
+          <tr>
+            <th>Time</th>
+            <th>Event</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2:00 PM</td>
+            <td>Welcome Drinks &amp; Guest Arrival</td>
+          </tr>
+          <tr>
+            <td>2:45 PM</td>
+            <td>Birthday Games &amp; Photo Booth</td>
+          </tr>
+          <tr>
+            <td>3:30 PM</td>
+            <td>Cake Cutting Ceremony</td>
+          </tr>
+          <tr>
+            <td>4:15 PM</td>
+            <td>Afternoon Feast &amp; Music</td>
+          </tr>
+          <tr>
+            <td>5:30 PM</td>
+            <td>Return Gifts &amp; Farewell</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <button class="join-btn" onclick="setReminder()">Set Party Reminder</button>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Kiki's Birthday Party &bull; 20 January, 2027 &bull; Created by Ibrar ul Haq (i263142)</p>
+  </footer>
+
+  <script>
+    function setReminder() {
+      console.log("Party schedule reminder set for 20 January, 2027");
+      window.alert("Reminder set! Kiki's Birthday Party begins at 2:00 PM on 20 January, 2027.");
+    }
+  </script>
+</body>
+</html>
