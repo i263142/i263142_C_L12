@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!-- Name: Ibrar ul Haq | Roll Number: i263142 | Section: C -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RSVP - Kiki's Birthday Party</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&family=Playfair+Display:wght@600&family=Pinyon+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="schedule.html">Schedule</a>
+    <a href="venue.html">Venue &amp; Directions</a>
+    <a href="rsvp.html" class="active">RSVP</a>
+  </nav>
+
+  <main class="invitation">
+    <img class="border" src="images/wavy-border.svg" alt="">
+    <img class="bow bow-tl" src="imag/image.jpg" alt="">
+    <img class="bow bow-tr" src="imag/image.jpg" alt="">
+    <img class="bow bow-bl" src="imag/image.jpg" alt="">
+    <img class="bow bow-br" src="imag/image.jpg" alt="">
+
+    <section class="content">
+      <p class="small-text">Kindly Respond By 10 January, 2027</p>
+      <h1 class="script">Confirm</h1>
+      <h2 class="party">Your RSVP</h2>
+
+      <form class="rsvp-form" onsubmit="submitRSVP(event)">
+        <div class="form-group">
+          <label for="guest-name">Full Name</label>
+          <input type="text" id="guest-name" placeholder="Enter your name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="guest-count">Number of Guests</label>
+          <select id="guest-count">
+            <option value="1">1 Guest (Just Me)</option>
+            <option value="2">2 Guests</option>
+            <option value="3">3 Guests</option>
+            <option value="4">4 Guests</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="attendance">Will You Attend?</label>
+          <select id="attendance">
+            <option value="Joyfully Accepts">Joyfully Accepts</option>
+            <option value="Regretfully Declines">Regretfully Declines</option>
+          </select>
+        </div>
+
+        <button type="submit" class="join-btn">Send RSVP</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Kiki's Birthday Party &bull; 20 January, 2027 &bull; Created by Ibrar ul Haq (i263142)</p>
+  </footer>
+
+  <script>
+    function submitRSVP(event) {
+      event.preventDefault();
+      const name = document.getElementById("guest-name").value;
+      const guests = document.getElementById("guest-count").value;
+      const status = document.getElementById("attendance").value;
+      console.log("RSVP Submitted:", name, guests, status);
+      window.alert("Thank you, " + name + "! Your RSVP (" + status + " for " + guests + " guest(s)) has been recorded.");
+    }
+  </script>
+</body>
+</html>

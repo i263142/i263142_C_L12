@@ -199,3 +199,39 @@ body {
   margin-bottom: 4px;
   color: #183a4a;
 }
+/* RSVP Form */
+.rsvp-form {
+  text-align: left;
+  margin-top: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.form-group label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #183a4a;
+}
+
+.form-group input,
+.form-group select {
+  padding: 10px 12px;
+  border: 1px solid rgba(24, 58, 74, 0.3);
+  border-radius: 6px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9rem;
+  color: #183a4a;
+  background-color: #ffffff;
+}
+
+.rsvp-form .join-btn {
+  width: 100%;
+  margin-top: 8px;
+}
