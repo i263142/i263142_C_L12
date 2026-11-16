@@ -1,0 +1,158 @@
+/* Name: Ibrar ul Haq | Roll Number: i263142 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #7eb6cb;
+  background-image: url("download.jpg");
+  background-size: cover;
+  background-position: center right;
+  background-repeat: no-repeat;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Main Invitation Card */
+.invitation {
+  position: relative;
+  width: 430px;
+  max-width: 100%;
+  padding: 58px 42px;
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(6px);
+  border-radius: 18px;
+  box-shadow: 0 16px 40px rgba(24, 58, 74, 0.22);
+  text-align: center;
+  overflow: hidden;
+}
+
+/* Wavy Border Overlay */
+.border {
+  position: absolute;
+  inset: 12px;
+  width: calc(100% - 24px);
+  height: calc(100% - 24px);
+  object-fit: fill;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Corner Bows */
+.bow {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  pointer-events: none;
+  z-index: 3;
+}
+
+.bow-tl {
+  top: 10px;
+  left: 10px;
+}
+
+.bow-tr {
+  top: 10px;
+  right: 10px;
+  transform: scaleX(-1);
+}
+
+.bow-bl {
+  bottom: 10px;
+  left: 10px;
+  transform: scaleY(-1);
+}
+
+.bow-br {
+  bottom: 10px;
+  right: 10px;
+  transform: scale(-1, -1);
+}
+
+/* Invitation Text Content */
+.content {
+  position: relative;
+  z-index: 2;
+}
+
+.small-text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #3b738a;
+}
+
+.name {
+  font-family: "Playfair Display", serif;
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #1c4759;
+  margin-top: 10px;
+}
+
+.script {
+  font-family: "Pinyon Script", cursive;
+  font-size: 4.3rem;
+  font-weight: 400;
+  line-height: 1.05;
+  color: #d95b88;
+  margin: 4px 0;
+}
+
+.party {
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #1c4759;
+  margin-bottom: 22px;
+}
+
+.time,
+.date {
+  margin: 5px 0;
+  color: #265366;
+}
+
+.place {
+  font-style: normal;
+  margin-top: 12px;
+  line-height: 1.6;
+  color: #3b738a;
+}
+
+/* Join Button */
+.join-btn {
+  margin-top: 26px;
+  padding: 13px 30px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.88rem;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #2b6f8a;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 6px 16px rgba(43, 111, 138, 0.3);
+  transition: background-color 0.25s ease, transform 0.2s ease;
+}
+
+.join-btn:hover {
+  background-color: #1c4759;
+  transform: translateY(-2px);
+}
+
+.join-btn:active {
+  transform: translateY(0);
+}
