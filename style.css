@@ -153,7 +153,7 @@ body {
   color: #183a4a;
   text-align: center;
   padding: 14px 16px;
-  font-size: 0.85rem;
+  font-size: 0.75rem;
   margin-top: 28px;
 }
 /* Schedule Table */
@@ -161,7 +161,7 @@ body {
   width: 100%;
   border-collapse: collapse;
   margin: 18px 0;
-  font-size: 0.9rem;
+  font-size: 0.91rem;
 }
 
 .schedule-table th,
